@@ -1,0 +1,8 @@
+node_modules
+vendor
+
+styles/**/*.css
+!styles/yeti-bootstrap.css
+
+scripts/**/*.js
+scripts/**/*.js.map

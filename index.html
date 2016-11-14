@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+  <link rel="ico" href="assets/favicon.ico" />
+
+  <link rel="stylesheet" href="styles/site.css" />
+
+  <script src="vendor/angular/angular.min.js"></script>
+  <script src="vendor/angular-sanitize/angular-sanitize.min.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+  <script src="scripts/app.js"></script>
+  <script src="scripts/fileloader/file-loader.js"></script>
+  <script src="scripts/fileloader/file-loader-controller.js"></script>
+  <script src="scripts/fileloader/file-loader-directive.js"></script>
+
+  <title>Browser File Loader</title>
+</head>
+
+<body role="document" ng-controller="FileLoaderController as vm">
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <span class="navbar-brand">Big Data and Grids</span>
+      </div>
+    </div>
+  </nav>
+  <div class="container" role="main">
+    <h1>Select text file</h1>
+    <input type="file" on-read-file="vm.showContent($fileContent)" />
+    <div ng-if="vm.content">
+      <h2>File content is:</h2>
+      <pre>{{ vm.content }}</pre>
+    </div>
+  </div>
+</body>
+
+</html>

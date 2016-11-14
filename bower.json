@@ -1,0 +1,30 @@
+{
+  "name": "ng-fileloader",
+  "homepage": "https://github.com/itanex/ng-fileloader",
+  "authors": [
+    "Bryan Wood <itanex@gmail.com>"
+  ],
+  "description": "ng-fileloader",
+  "main": "index.html",
+  "keywords": [
+    "file",
+    "input",
+    "upload"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  },
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "angular-bootstrap": "^2.2.0",
+    "angular-sanitize": "^1.5.8"
+  }
+}

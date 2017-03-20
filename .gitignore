@@ -1,8 +1,8 @@
 node_modules
 vendor
 
-styles/**/*.css
-!styles/yeti-bootstrap.css
+src/styles/**/*.css
+!src/styles/yeti-bootstrap.css
 
-scripts/**/*.js
-scripts/**/*.js.map
+src/scripts/**/*.js
+src/scripts/**/*.js.map

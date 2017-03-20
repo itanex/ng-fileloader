@@ -2,20 +2,10 @@
 <html ng-app="app">
 
 <head>
+  <title>Browser File Loader</title>
   <link rel="ico" href="assets/favicon.ico" />
 
   <link rel="stylesheet" href="styles/site.css" />
-
-  <script src="vendor/angular/angular.min.js"></script>
-  <script src="vendor/angular-sanitize/angular-sanitize.min.js"></script>
-  <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-
-  <script src="scripts/app.js"></script>
-  <script src="scripts/fileloader/file-loader.js"></script>
-  <script src="scripts/fileloader/file-loader-controller.js"></script>
-  <script src="scripts/fileloader/file-loader-directive.js"></script>
-
-  <title>Browser File Loader</title>
 </head>
 
 <body role="document" ng-controller="FileLoaderController as vm">
@@ -35,6 +25,15 @@
       <pre>{{ vm.content }}</pre>
     </div>
   </div>
+
+  <script src="vendor/angular/angular.min.js"></script>
+  <script src="vendor/angular-sanitize/angular-sanitize.min.js"></script>
+  <script src="vendor/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+  <script src="scripts/fileloader/file-loader-controller.js"></script>
+  <script src="scripts/fileloader/file-loader-directive.js"></script>
+  <script src="scripts/fileloader/file-loader.js"></script>
+  <script src="scripts/app.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,5 @@
 module FileLoader {
-  angular.module('app', ['app.fileLoader']);
+    let module: ng.IModule = angular.module('app', [
+      'app.fileLoader'
+    ]);
 }

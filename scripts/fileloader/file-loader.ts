@@ -1,3 +1,7 @@
 module FileLoader {
-  angular.module('app.fileLoader', []);
+    let module: ng.IModule = angular.module('app.fileLoader', []);
+
+    module.controller('FileLoaderController', FileLoaderController);
+    
+    module.directive('onReadFile', FileLoaderDirective.factory());
 }

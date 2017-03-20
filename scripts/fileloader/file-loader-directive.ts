@@ -13,7 +13,7 @@ module FileLoader {
         target: any;
     }
 
-    class FileLoaderDirective implements ng.IDirective {
+    export class FileLoaderDirective implements ng.IDirective {
         public restrict: string = 'A';
         public scope: any = false;
 
@@ -21,7 +21,7 @@ module FileLoader {
             private $parse: ng.IParseService
         ) { }
 
-        link = (scope: ng.IScope, element: ng.IAugmentedJQuery, attributes: FileLoaderAttributes, ngModel: ng.INgModelController) => {
+        public link = (scope: ng.IScope, element: ng.IAugmentedJQuery, attributes: FileLoaderAttributes, ngModel: ng.INgModelController) => {
 
             let fn = this.$parse(attributes.onReadFile);
 
@@ -46,9 +46,4 @@ module FileLoader {
             return directive;
         }
     }
-
-
-    angular
-        .module('app.fileLoader')
-        .directive('onReadFile', FileLoaderDirective.factory());
 }

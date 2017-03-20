@@ -1,6 +1,6 @@
 module FileLoader {
 
-	class FileLoaderController {
+	export class FileLoaderController {
 		public content: any = null;
 
 		constructor() { }
@@ -9,8 +9,4 @@ module FileLoader {
 			this.content = $fileContent;
 		}
 	}
-
-	angular
-		.module('app.fileLoader')
-		.controller('FileLoaderController', FileLoaderController);
 }
